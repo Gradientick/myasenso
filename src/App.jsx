@@ -1,35 +1,47 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './style.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1 className='page-title'>MyAsenso</h1>
+      <div className='header'>
+        <div className='logo'>My LOGO</div>
+        <div className='header-container'>
+          <div className='left'><h2>Hi, Welcome to MyAsenso!</h2></div>
+          <div className='right'></div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className='main'>
+        <div className='card'>
+          <div className='frame'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+        </div>
+        <div className='card'>
+          <div className='frame'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+        </div>
+        <div className='card'>
+          <div className='frame'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+          <div className='card-text'></div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='footer'>FOOTER</div>
     </>
   )
 }
 
-export default App
